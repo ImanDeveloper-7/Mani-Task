@@ -215,7 +215,7 @@
                                                             <constraint firstAttribute="height" constant="32" id="YnZ-zw-NJ5"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" red="1" green="0.34509803921568627" blue="0.58039215686274503" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -279,6 +279,9 @@
                                                                 </constraints>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Copy"/>
+                                                                <connections>
+                                                                    <action selector="copyButtonTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="QBr-bB-alY"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -343,6 +346,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Visit website"/>
+                                                        <connections>
+                                                            <action selector="visitWesiteTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="cpd-9z-NeQ"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -396,6 +402,9 @@
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="I've redeemed my offer"/>
+                                                        <connections>
+                                                            <action selector="reddemedButtonTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="e7g-KH-K8m"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -452,6 +461,19 @@
                             <constraint firstAttribute="bottom" secondItem="1q7-eC-jx9" secondAttribute="bottom" id="ciV-Ar-kR6"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="btn_copy" destination="oxy-Jp-kMk" id="eih-W7-IWU"/>
+                        <outlet property="btn_redeemed" destination="pmo-1A-31W" id="rpf-6S-vhc"/>
+                        <outlet property="btn_visitWebsite" destination="OfQ-zQ-243" id="eml-p4-i79"/>
+                        <outlet property="lbl_number1" destination="SfG-Jc-JDv" id="KhW-o1-ttK"/>
+                        <outlet property="lbl_number2" destination="EFU-hV-fUY" id="6mE-F9-dkm"/>
+                        <outlet property="lbl_number3" destination="QBU-ge-kGn" id="GLg-Os-xZ3"/>
+                        <outlet property="lbl_time" destination="New-R7-ZA2" id="YmD-Li-UdI"/>
+                        <outlet property="view_number1" destination="wdV-Lt-EXD" id="62g-T6-d3e"/>
+                        <outlet property="view_number2" destination="NUy-qh-VdG" id="nB6-vt-Mpd"/>
+                        <outlet property="view_number3" destination="rFQ-OH-Ppf" id="Pym-mF-4Bn"/>
+                        <outlet property="view_time" destination="VLT-oD-Dea" id="3Dy-iT-8OR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TJE-cR-oG9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

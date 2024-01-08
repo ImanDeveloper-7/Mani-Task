@@ -9,6 +9,18 @@ import UIKit
 
 class RedeemingInstructionsVC: UIViewController {
     
+    @IBOutlet weak var lbl_time: UILabel!
+    @IBOutlet weak var lbl_number1: UILabel!
+    @IBOutlet weak var btn_copy: UIButton!
+    @IBOutlet weak var lbl_number2: UILabel!
+    @IBOutlet weak var btn_visitWebsite: UIButton!
+    @IBOutlet weak var lbl_number3: UILabel!
+    @IBOutlet weak var btn_redeemed: UIButton!
+    @IBOutlet weak var view_time: UIView!
+    @IBOutlet weak var view_number1: UIView!
+    @IBOutlet weak var view_number2: UIView!
+    @IBOutlet weak var view_number3: UIView!
+    
     let gradientLayer = CAGradientLayer()
     
     override func viewDidLoad() {
@@ -16,6 +28,9 @@ class RedeemingInstructionsVC: UIViewController {
         gradientLayer.frame = view.bounds
 
         setupGradientBackground()
+        
+        
+        
     }
     
     private func setupGradientBackground() {
@@ -26,5 +41,17 @@ class RedeemingInstructionsVC: UIViewController {
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.frame = view.bounds
         view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    @IBAction func copyButtonTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func visitWesiteTapped(_ sender: UIButton) {
+        
+    }
+    
+    @IBAction func reddemedButtonTapped(_ sender: UIButton) {
+        
     }
 }

@@ -34,3 +34,22 @@ extension UIColor {
         return nil
     }
 }
+
+extension UIView {
+
+    func applyTagSpecificStyles() {
+        switch self.tag {
+        case 1:
+            self.layer.cornerRadius = 10 // Replace with the desired corner radius
+            self.backgroundColor = UIColor(hex: "#2E133C") // Replace with the desired hex color code
+        case 2:
+            self.layer.cornerRadius = 15 // Replace with the desired corner radius
+            self.backgroundColor = UIColor(hex: "#A01150") // Replace with the desired hex color code
+        case 3:
+            self.layer.cornerRadius = 20 // Replace with the desired corner radius
+            self.backgroundColor = UIColor(hex: "#750F47") // Replace with the desired hex color code
+        default:
+            break
+        }
+    }
+}
