@@ -36,22 +36,24 @@ class RedeemingInstructionsVC: UIViewController {
             self.view_number3.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
             
             self.view_copy.applyGradient(cornerRadius: 15, colorHexArray: ["#261239", "#601748"])
+            
+            self.btn_visitWebsite.layer.cornerRadius = 20
+            self.btn_redeemed.layer.cornerRadius = 20
+            
+            self.lbl_number1.makeCircularWithBackgroundColor(hexColor: "#E42268")
+            self.lbl_number2.makeCircularWithBackgroundColor(hexColor: "#E42268")
+            self.lbl_number3.makeCircularWithBackgroundColor(hexColor: "#E42268")
+            
+            self.btn_copy.layer.cornerRadius = 10
+            self.btn_copy.addBorder(width: 2, color: UIColor(hex: "#01E0AD") ?? UIColor.white)
+            
+            
+            
+            self.view_time.backgroundColor = UIColor(hex: "#253B52") ?? UIColor.white
+            self.view_time.layer.cornerRadius = 15
+            self.view_time.layer.borderWidth = 1
+            self.view_time.layer.borderColor = UIColor(hex: "#01E0AD")?.cgColor
         }
-        
-        
-        self.lbl_number1.makeCircularWithBackgroundColor(hexColor: "#E42268")
-        self.lbl_number2.makeCircularWithBackgroundColor(hexColor: "#E42268")
-        self.lbl_number3.makeCircularWithBackgroundColor(hexColor: "#E42268")
-        
-        self.btn_copy.layer.cornerRadius = 10
-        self.btn_copy.addBorder(width: 2, color: UIColor(hex: "#01E0AD") ?? UIColor.white)
-        
-        
-        
-        self.view_time.backgroundColor = UIColor(hex: "#253B52") ?? UIColor.white
-        self.view_time.layer.cornerRadius = 15
-        self.view_time.layer.borderWidth = 1
-        self.view_time.layer.borderColor = UIColor(hex: "#01E0AD")?.cgColor
         
     }
     
