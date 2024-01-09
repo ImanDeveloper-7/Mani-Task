@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Domine-Bold.ttf">
+            <string>Domine-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--List View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -199,7 +204,7 @@
                                                             <constraint firstAttribute="height" constant="19" id="zDE-Nf-2oj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-xa-z9X">
@@ -210,11 +215,11 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46:59:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="New-R7-ZA2">
-                                                        <rect key="frame" x="136" y="46" width="109" height="32"/>
+                                                        <rect key="frame" x="136" y="46" width="117.33333333333331" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="YnZ-zw-NJ5"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="28"/>
+                                                        <fontDescription key="fontDescription" name="Domine-Bold" family="Domine" pointSize="28"/>
                                                         <color key="textColor" red="1" green="0.34509803921568627" blue="0.58039215686274503" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -231,7 +236,7 @@
                                                     <constraint firstItem="xt4-N8-INo" firstAttribute="leading" secondItem="VLT-oD-Dea" secondAttribute="leading" constant="8" id="xbM-2y-waT"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-Lt-EXD">
+                                            <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wdV-Lt-EXD">
                                                 <rect key="frame" x="20" y="195" width="353" height="182"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SfG-Jc-JDv">
@@ -240,8 +245,8 @@
                                                             <constraint firstAttribute="width" constant="24" id="CLf-MQ-8k5"/>
                                                             <constraint firstAttribute="height" constant="24" id="HcF-fS-ZjA"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy This Coupon Code to Be Used Later" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stm-GJ-zH4">
@@ -250,7 +255,7 @@
                                                             <constraint firstAttribute="height" constant="39" id="BCb-p7-rYM"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewards" translatesAutoresizingMaskIntoConstraints="NO" id="QLm-iC-Ix7">
@@ -264,19 +269,21 @@
                                                         <rect key="frame" x="18" y="107" width="317" height="52"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOGETHERKOMBUCHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PW-iN-X0d">
-                                                                <rect key="frame" x="19" y="19" width="181.33333333333334" height="19.333333333333329"/>
+                                                                <rect key="frame" x="19" y="13.999999999999998" width="181.33333333333334" height="19.333333333333329"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="19.329999999999998" id="pIl-4F-g6B"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                                <nil key="textColor"/>
+                                                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxy-Jp-kMk">
-                                                                <rect key="frame" x="213.33333333333334" y="14" width="85.666666666666657" height="36"/>
+                                                                <rect key="frame" x="213.33333333333334" y="14" width="85.666666666666657" height="25"/>
+                                                                <color key="backgroundColor" red="0.1803921568627451" green="0.074509803921568626" blue="0.23529411764705882" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <constraints>
-                                                                    <constraint firstAttribute="height" constant="36" id="j5I-ZX-LFy"/>
+                                                                    <constraint firstAttribute="height" constant="25" id="j5I-ZX-LFy"/>
                                                                 </constraints>
+                                                                <color key="tintColor" red="0.0039215686274509803" green="0.8784313725490196" blue="0.67843137254901964" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="Copy"/>
                                                                 <connections>
@@ -286,7 +293,7 @@
                                                         </subviews>
                                                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                                         <constraints>
-                                                            <constraint firstItem="4PW-iN-X0d" firstAttribute="top" secondItem="Qu6-QL-BTp" secondAttribute="top" constant="19" id="5JL-Jb-RLZ"/>
+                                                            <constraint firstItem="4PW-iN-X0d" firstAttribute="top" secondItem="Qu6-QL-BTp" secondAttribute="top" constant="14" id="5JL-Jb-RLZ"/>
                                                             <constraint firstAttribute="trailing" secondItem="oxy-Jp-kMk" secondAttribute="trailing" constant="18" id="Bjt-1v-DcK"/>
                                                             <constraint firstItem="oxy-Jp-kMk" firstAttribute="leading" secondItem="4PW-iN-X0d" secondAttribute="trailing" constant="13" id="Liz-tF-Sd2"/>
                                                             <constraint firstAttribute="height" constant="52" id="ghF-hf-jiW"/>
@@ -310,7 +317,7 @@
                                                     <constraint firstItem="Qu6-QL-BTp" firstAttribute="leading" secondItem="wdV-Lt-EXD" secondAttribute="leading" constant="18" id="u24-NZ-s7k"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUy-qh-VdG">
+                                            <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NUy-qh-VdG">
                                                 <rect key="frame" x="20" y="399" width="353" height="162"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EFU-hV-fUY">
@@ -319,8 +326,8 @@
                                                             <constraint firstAttribute="width" constant="24" id="DQd-u5-NiQ"/>
                                                             <constraint firstAttribute="height" constant="24" id="noh-tg-WsO"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to the Website, Select the Product &amp; Add to Cart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhe-ZC-W0t">
@@ -329,7 +336,7 @@
                                                             <constraint firstAttribute="height" constant="39" id="oHa-E1-jak"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website" translatesAutoresizingMaskIntoConstraints="NO" id="l06-pc-0fK">
@@ -345,7 +352,11 @@
                                                             <constraint firstAttribute="height" constant="36" id="1iA-Z4-nLf"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Visit website"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="Visit website">
+                                                            <backgroundConfiguration key="background" cornerRadius="20">
+                                                                <color key="backgroundColor" red="0.89411764705882346" green="0.13333333333333333" blue="0.40784313725490196" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                                            </backgroundConfiguration>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="visitWesiteTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="cpd-9z-NeQ"/>
                                                         </connections>
@@ -366,7 +377,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="OfQ-zQ-243" secondAttribute="trailing" constant="16" id="bdt-VU-C31"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFQ-OH-Ppf">
+                                            <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFQ-OH-Ppf">
                                                 <rect key="frame" x="20" y="583" width="353" height="161"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBU-ge-kGn">
@@ -375,8 +386,8 @@
                                                             <constraint firstAttribute="height" constant="24" id="Giv-Yb-TQw"/>
                                                             <constraint firstAttribute="width" constant="24" id="MZu-vs-PXs"/>
                                                         </constraints>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Once you are done, just let us know you have used this offer!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-86-D1x">
@@ -385,7 +396,7 @@
                                                             <constraint firstAttribute="height" constant="39" id="Fkf-xh-flt"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <nil key="textColor"/>
+                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paste_code" translatesAutoresizingMaskIntoConstraints="NO" id="yqE-aU-Er5">
@@ -401,7 +412,11 @@
                                                             <constraint firstAttribute="height" constant="36" id="f0M-U9-7QF"/>
                                                         </constraints>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="I've redeemed my offer"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="I've redeemed my offer">
+                                                            <backgroundConfiguration key="background" cornerRadius="20">
+                                                                <color key="backgroundColor" red="0.89411764705882346" green="0.13333333333333333" blue="0.40784313725490196" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                                            </backgroundConfiguration>
+                                                        </buttonConfiguration>
                                                         <connections>
                                                             <action selector="reddemedButtonTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="e7g-KH-K8m"/>
                                                         </connections>
@@ -469,6 +484,7 @@
                         <outlet property="lbl_number2" destination="EFU-hV-fUY" id="6mE-F9-dkm"/>
                         <outlet property="lbl_number3" destination="QBU-ge-kGn" id="GLg-Os-xZ3"/>
                         <outlet property="lbl_time" destination="New-R7-ZA2" id="YmD-Li-UdI"/>
+                        <outlet property="view_copy" destination="Qu6-QL-BTp" id="38m-bv-mJZ"/>
                         <outlet property="view_number1" destination="wdV-Lt-EXD" id="62g-T6-d3e"/>
                         <outlet property="view_number2" destination="NUy-qh-VdG" id="nB6-vt-Mpd"/>
                         <outlet property="view_number3" destination="rFQ-OH-Ppf" id="Pym-mF-4Bn"/>

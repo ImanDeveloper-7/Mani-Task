@@ -16,6 +16,7 @@
 		989C67602B353DE600F6B578 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989C675F2B353DE600F6B578 /* DetailsViewController.swift */; };
 		98BC0E2E2B4BA9D4005EDF1D /* RedeemingInstructionsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC0E2D2B4BA9D4005EDF1D /* RedeemingInstructionsVC.swift */; };
 		98BC0E302B4BAD3F005EDF1D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98BC0E2F2B4BAD3F005EDF1D /* Extensions.swift */; };
+		98BC0E342B4CF038005EDF1D /* Domine-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 98BC0E332B4CF02B005EDF1D /* Domine-Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		989C675F2B353DE600F6B578 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		98BC0E2D2B4BA9D4005EDF1D /* RedeemingInstructionsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedeemingInstructionsVC.swift; sourceTree = "<group>"; };
 		98BC0E2F2B4BAD3F005EDF1D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		98BC0E332B4CF02B005EDF1D /* Domine-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Domine-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				989C67562B353DCD00F6B578 /* LaunchScreen.storyboard */,
 				989C67592B353DCD00F6B578 /* Info.plist */,
 				98BC0E2F2B4BAD3F005EDF1D /* Extensions.swift */,
+				98BC0E332B4CF02B005EDF1D /* Domine-Bold.ttf */,
 			);
 			path = "Mani-Task";
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98BC0E342B4CF038005EDF1D /* Domine-Bold.ttf in Resources */,
 				989C67582B353DCD00F6B578 /* LaunchScreen.storyboard in Resources */,
 				989C67552B353DCD00F6B578 /* Assets.xcassets in Resources */,
 				989C67532B353DCC00F6B578 /* Main.storyboard in Resources */,
