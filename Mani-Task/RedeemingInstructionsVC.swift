@@ -26,66 +26,13 @@ class RedeemingInstructionsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        gradientLayer.frame = view.bounds
-
-        setupGradientBackground()
         
         DispatchQueue.main.async {
-            self.view_number1.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
-            self.view_number2.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
-            self.view_number3.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
-            
-            self.view_copy.applyGradient(cornerRadius: 15, colorHexArray: ["#261239", "#601748"])
-            
-            self.btn_visitWebsite.layer.cornerRadius = 20
-            self.btn_redeemed.layer.cornerRadius = 20
-            
-            self.lbl_number1.makeCircularWithBackgroundColor(hexColor: "#E42268")
-            self.lbl_number2.makeCircularWithBackgroundColor(hexColor: "#E42268")
-            self.lbl_number3.makeCircularWithBackgroundColor(hexColor: "#E42268")
-            
-            self.btn_copy.layer.cornerRadius = 10
-            self.btn_copy.addBorder(width: 2, color: UIColor(hex: "#01E0AD") ?? UIColor.white)
-            
-            
-            
-            self.view_time.backgroundColor = UIColor(hex: "#253B52") ?? UIColor.white
-            self.view_time.layer.cornerRadius = 15
-            self.view_time.layer.borderWidth = 1
-            self.view_time.layer.borderColor = UIColor(hex: "#01E0AD")?.cgColor
+            self.gradientLayer.frame = self.view.bounds
+            self.setupGradientBackground()
+            self.setupUI()
         }
         
-    }
-    
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//        if let gradientLayer = self.view_number1.layer.sublayers?.first(where: { $0 is CAGradientLayer }) as? CAGradientLayer {
-//            gradientLayer.frame = self.view_number1.bounds
-//                
-//                if let shapeLayer = gradientLayer.mask as? CAShapeLayer {
-//                    shapeLayer.path = UIBezierPath(rect: self.view_number1.bounds).cgPath
-//                }
-//            }
-//    }
-    
-//    private func gradientColor() {
-//        let topColor = UIColor(hex: "#2E133C") ?? UIColor.black
-//        let bottomColor = UIColor(hex: "#E42268") ?? UIColor.red
-//        
-//        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-//        gradientLayer.locations = [0.0, 1.0]
-//        gradientLayer.frame = view.bounds
-//        self.view_number1.layer.insertSublayer(gradientLayer, at: 0)
-//    }
-    
-    private func setupGradientBackground() {
-        let topColor = UIColor(hex: "#2E133C") ?? UIColor.black
-        let bottomColor = UIColor(hex: "#E42268") ?? UIColor.red
-        
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = view.bounds
-        view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     @IBAction func copyButtonTapped(_ sender: UIButton) {
@@ -98,5 +45,44 @@ class RedeemingInstructionsVC: UIViewController {
     
     @IBAction func reddemedButtonTapped(_ sender: UIButton) {
         
+    }
+}
+
+
+
+extension RedeemingInstructionsVC {
+    private func setupGradientBackground() {
+        let topColor = UIColor(hex: "#2E133C") ?? UIColor.black
+        let bottomColor = UIColor(hex: "#E42268") ?? UIColor.red
+        
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = view.bounds
+        view.layer.insertSublayer(gradientLayer, at: 0)
+    }
+    
+    private func setupUI() {
+        self.view_number1.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
+        self.view_number2.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
+        self.view_number3.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
+        
+        self.view_copy.applyGradient(cornerRadius: 15, colorHexArray: ["#261239", "#601748"])
+        
+        self.btn_visitWebsite.layer.cornerRadius = 20
+        self.btn_redeemed.layer.cornerRadius = 20
+        
+        self.lbl_number1.makeCircularWithBackgroundColor(hexColor: "#E42268")
+        self.lbl_number2.makeCircularWithBackgroundColor(hexColor: "#E42268")
+        self.lbl_number3.makeCircularWithBackgroundColor(hexColor: "#E42268")
+        
+        self.btn_copy.layer.cornerRadius = 10
+        self.btn_copy.addBorder(width: 2, color: UIColor(hex: "#01E0AD") ?? UIColor.white)
+        
+        
+        
+        self.view_time.backgroundColor = UIColor(hex: "#253B52") ?? UIColor.white
+        self.view_time.layer.cornerRadius = 15
+        self.view_time.layer.borderWidth = 1
+        self.view_time.layer.borderColor = UIColor(hex: "#01E0AD")?.cgColor
     }
 }

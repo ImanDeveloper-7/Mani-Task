@@ -356,6 +356,9 @@
                                                         <state key="normal" title="Visit website">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="visitWesiteTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="d4T-Cn-Gsc"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -413,6 +416,9 @@
                                                         <state key="normal" title="I've redeemed my oofer">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="reddemedButtonTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="Q6R-t0-Wf7"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
