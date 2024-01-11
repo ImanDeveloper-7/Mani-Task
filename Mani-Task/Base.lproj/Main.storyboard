@@ -203,7 +203,7 @@
                                                             <constraint firstAttribute="height" constant="19" id="zDE-Nf-2oj"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer" translatesAutoresizingMaskIntoConstraints="NO" id="2gF-xa-z9X">
@@ -254,13 +254,13 @@
                                                             <constraint firstAttribute="height" constant="39" id="BCb-p7-rYM"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rewards" translatesAutoresizingMaskIntoConstraints="NO" id="QLm-iC-Ix7">
-                                                        <rect key="frame" x="281" y="27" width="56" height="56"/>
+                                                        <rect key="frame" x="247" y="27" width="90" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="56" id="AIP-on-ok7"/>
+                                                            <constraint firstAttribute="width" constant="90" id="AIP-on-ok7"/>
                                                             <constraint firstAttribute="height" constant="56" id="niU-pW-Hbm"/>
                                                         </constraints>
                                                     </imageView>
@@ -273,18 +273,22 @@
                                                                     <constraint firstAttribute="height" constant="19.329999999999998" id="pIl-4F-g6B"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxy-Jp-kMk">
+                                                            <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxy-Jp-kMk">
                                                                 <rect key="frame" x="213.33333333333334" y="14" width="85.666666666666657" height="25"/>
                                                                 <color key="backgroundColor" red="0.1803921568627451" green="0.074509803921568626" blue="0.23529411764705882" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="25" id="j5I-ZX-LFy"/>
                                                                 </constraints>
+                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
                                                                 <color key="tintColor" red="0.0039215686274509803" green="0.8784313725490196" blue="0.67843137254901964" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
-                                                                <state key="normal" title="Button"/>
-                                                                <buttonConfiguration key="configuration" style="plain" title="Copy"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Copy" image="copy">
+                                                                    <color key="titleColor" red="0.0039215686269999999" green="0.87843137250000003" blue="0.67843137249999996" alpha="0.8980392157" colorSpace="calibratedRGB"/>
+                                                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="copyButtonTapped:" destination="RYG-zL-LJk" eventType="touchUpInside" id="QBr-bB-alY"/>
                                                                 </connections>
@@ -335,13 +339,13 @@
                                                             <constraint firstAttribute="height" constant="39" id="oHa-E1-jak"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="website" translatesAutoresizingMaskIntoConstraints="NO" id="l06-pc-0fK">
-                                                        <rect key="frame" x="281" y="26" width="56" height="56"/>
+                                                        <rect key="frame" x="247" y="26" width="90" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="56" id="5is-fB-P0X"/>
+                                                            <constraint firstAttribute="width" constant="90" id="5is-fB-P0X"/>
                                                             <constraint firstAttribute="height" constant="56" id="jMc-lT-cBs"/>
                                                         </constraints>
                                                     </imageView>
@@ -395,13 +399,13 @@
                                                             <constraint firstAttribute="height" constant="39" id="Fkf-xh-flt"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paste_code" translatesAutoresizingMaskIntoConstraints="NO" id="yqE-aU-Er5">
-                                                        <rect key="frame" x="281" y="26" width="56" height="56"/>
+                                                        <rect key="frame" x="247" y="26" width="90" height="56"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" constant="56" id="prg-DQ-ek7"/>
+                                                            <constraint firstAttribute="width" constant="90" id="prg-DQ-ek7"/>
                                                             <constraint firstAttribute="height" constant="56" id="shD-9E-NTy"/>
                                                         </constraints>
                                                     </imageView>
@@ -497,13 +501,14 @@
     </scenes>
     <resources>
         <image name="close_icon" width="24" height="24"/>
+        <image name="copy" width="16" height="16"/>
         <image name="network" catalog="system" width="128" height="123"/>
         <image name="paste_code" width="95.666999816894531" height="70.964996337890625"/>
         <image name="rewards" width="84.626998901367188" height="94.666000366210938"/>
         <image name="timer" width="32" height="32"/>
         <image name="website" width="94.666999816894531" height="88.902999877929688"/>
         <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

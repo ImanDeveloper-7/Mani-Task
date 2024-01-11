@@ -55,18 +55,22 @@ extension RedeemingInstructionsVC {
         let topColor = UIColor(hex: "#2E133C") ?? UIColor.black
         let bottomColor = UIColor(hex: "#E42268") ?? UIColor.red
         
-        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = view.bounds
-        view.layer.insertSublayer(gradientLayer, at: 0)
+        self.gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        self.gradientLayer.locations = [0.0, 1.0]
+        self.gradientLayer.frame = view.bounds
+        self.view.layer.insertSublayer(gradientLayer, at: 0)
     }
     
     private func setupUI() {
-        self.view_number1.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
-        self.view_number2.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
-        self.view_number3.applyGradient(cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
+        self.view_number1.applyGradient(isVertical: false, cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
+        self.view_number2.applyGradient(isVertical: false, cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
+        self.view_number3.applyGradient(isVertical: false, cornerRadius: 15, colorHexArray: ["#2A153C", "#43375A"])
         
-        self.view_copy.applyGradient(cornerRadius: 15, colorHexArray: ["#261239", "#601748"])
+        let topColor = UIColor(hex: "#01E0AD") ?? UIColor.black
+        let bottomColor = UIColor(hex: "#E001B5") ?? UIColor.red
+        
+        self.view_copy.applyGradient(isVertical: false, cornerRadius: 15, colorHexArray: ["#261239", "#601748"])
+        self.view_copy.gradientBorder(colors: [topColor, bottomColor], isVertical: false, lineWidth: 2)
         
         self.btn_visitWebsite.layer.cornerRadius = 20
         self.btn_redeemed.layer.cornerRadius = 20
@@ -75,8 +79,8 @@ extension RedeemingInstructionsVC {
         self.lbl_number2.makeCircularWithBackgroundColor(hexColor: "#E42268")
         self.lbl_number3.makeCircularWithBackgroundColor(hexColor: "#E42268")
         
-        self.btn_copy.layer.cornerRadius = 10
-        self.btn_copy.addBorder(width: 2, color: UIColor(hex: "#01E0AD") ?? UIColor.white)
+        self.btn_copy.layer.cornerRadius = 12
+        self.btn_copy.addBorder(width: 0.75, color: UIColor(hex: "#01E0AD") ?? UIColor.white)
         
         
         

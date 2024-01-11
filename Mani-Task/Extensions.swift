@@ -15,27 +15,6 @@ extension UIButton {
     }
 }
 
-extension UIView {
-    
-    func applyGradientBorder(colors: [UIColor], width: CGFloat) {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = colors.map { $0.cgColor }
-        gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
-        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
-        
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.lineWidth = width
-        shapeLayer.path = UIBezierPath(rect: bounds).cgPath
-        shapeLayer.fillColor = nil
-        shapeLayer.strokeColor = UIColor.black.cgColor
-        gradientLayer.mask = shapeLayer
-        
-        layer.addSublayer(gradientLayer)
-    }
-    
-}
-
 extension UILabel {
     func setCustomFont(fontName: String, size: CGFloat) {
         guard let customFont = UIFont(name: fontName, size: size) else {
@@ -66,46 +45,27 @@ extension UILabel {
     }
 }
 
-extension UIView {
-
-    func applyTagSpecificStyles() {
-        switch self.tag {
-        case 1:
-            self.layer.cornerRadius = 10 // Replace with the desired corner radius
-            self.backgroundColor = UIColor(hex: "#2E133C") // Replace with the desired hex color code
-        case 2:
-            self.layer.cornerRadius = 15 // Replace with the desired corner radius
-            self.backgroundColor = UIColor(hex: "#A01150") // Replace with the desired hex color code
-        case 3:
-            self.layer.cornerRadius = 20 // Replace with the desired corner radius
-            self.backgroundColor = UIColor(hex: "#750F47") // Replace with the desired hex color code
-        default:
-            break
-        }
-    }
-}
-
 import UIKit
 
 // Extension to convert hex string to UIColor
 extension UIColor {
     convenience init?(hex: String) {
         let r, g, b, a: CGFloat
-
+        
         if hex.hasPrefix("#") {
             let start = hex.index(hex.startIndex, offsetBy: 1)
             let hexColor = String(hex[start...])
-
+            
             if hexColor.count == 6 {
                 let scanner = Scanner(string: hexColor)
                 var hexNumber: UInt64 = 0
-
+                
                 if scanner.scanHexInt64(&hexNumber) {
                     r = CGFloat((hexNumber & 0xff0000) >> 16) / 255
                     g = CGFloat((hexNumber & 0x00ff00) >> 8) / 255
                     b = CGFloat(hexNumber & 0x0000ff) / 255
                     a = 1.0
-
+                    
                     self.init(red: r, green: g, blue: b, alpha: a)
                     return
                 }
@@ -118,13 +78,24 @@ extension UIColor {
 // Extension to add gradient background and corner radius to UIView
 extension UIView {
     
-    func applyGradient(cornerRadius: CGFloat, colorHexArray: [String]) {
+    func applyGradient(isVertical: Bool, cornerRadius: CGFloat, colorHexArray: [String]) {
         self.layer.sublayers?.removeAll(where: { $0 is CAGradientLayer }) // Remove existing gradient layers
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = self.bounds
         gradientLayer.colors = colorHexArray.compactMap { UIColor(hex: $0)?.cgColor }
         gradientLayer.locations = [0.0, 1.0] // Start and end points of the gradient
         gradientLayer.cornerRadius = cornerRadius
+        
+        
+        
+        if(isVertical){
+            gradientLayer.startPoint = CGPoint(x: 0.5, y: 0)
+            gradientLayer.endPoint = CGPoint(x: 0.5, y: 1)
+        }
+        else {
+            gradientLayer.startPoint = CGPoint(x: 0, y: 0.5)
+            gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        }
         
         // Ensure the corner radius is masked
         self.layer.cornerRadius = cornerRadius
@@ -135,4 +106,37 @@ extension UIView {
     
 }
 
+extension UIView {
+    func gradientBorder(colors: [UIColor], isVertical: Bool, lineWidth: CGFloat){
+        self.layer.masksToBounds = true
+        
+        //Create gradient layer
+        let gradient = CAGradientLayer()
+        gradient.frame = CGRect(origin: CGPoint.zero, size: self.bounds.size)
+        gradient.colors = colors.map({ (color) -> CGColor in
+            color.cgColor
+        })
 
+        //Set gradient direction
+        if(isVertical){
+            gradient.startPoint = CGPoint(x: 0.5, y: 0)
+            gradient.endPoint = CGPoint(x: 0.5, y: 1)
+        }
+        else {
+            gradient.startPoint = CGPoint(x: 0, y: 0.5)
+            gradient.endPoint = CGPoint(x: 1, y: 0.5)
+        }
+
+        //Create shape layer
+        let shape = CAShapeLayer()
+        shape.lineWidth = lineWidth
+        shape.path = UIBezierPath(roundedRect: gradient.frame.insetBy(dx: 1, dy: 1), cornerRadius: self.layer.cornerRadius).cgPath
+        shape.strokeColor = UIColor.black.cgColor
+        shape.fillColor = UIColor.clear.cgColor
+        gradient.mask = shape
+
+        //Add layer to view
+        self.layer.addSublayer(gradient)
+        gradient.zPosition = 0
+    }
+}
