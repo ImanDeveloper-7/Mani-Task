@@ -219,7 +219,7 @@
                                                             <constraint firstAttribute="height" constant="32" id="YnZ-zw-NJ5"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="Domine-Bold" family="Domine" pointSize="28"/>
-                                                        <color key="textColor" red="1" green="0.34509803921568627" blue="0.58039215686274503" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
+                                                        <color key="textColor" red="1" green="0.34509803921568627" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                 </subviews>
@@ -245,7 +245,7 @@
                                                             <constraint firstAttribute="height" constant="24" id="HcF-fS-ZjA"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Copy This Coupon Code to Be Used Later" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="stm-GJ-zH4">
@@ -330,7 +330,7 @@
                                                             <constraint firstAttribute="height" constant="24" id="noh-tg-WsO"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Go to the Website, Select the Product &amp; Add to Cart" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhe-ZC-W0t">
@@ -390,7 +390,7 @@
                                                             <constraint firstAttribute="width" constant="24" id="MZu-vs-PXs"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                                        <color key="textColor" systemColor="systemBackgroundColor"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Once you are done, just let us know you have used this offer!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-86-D1x">
