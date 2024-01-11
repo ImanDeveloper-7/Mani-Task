@@ -53,10 +53,10 @@ class RedeemingInstructionsVC: UIViewController {
 extension RedeemingInstructionsVC {
     private func setupGradientBackground() {
         let topColor = UIColor(hex: "#2E133C") ?? UIColor.black
-        let bottomColor = UIColor(hex: "#E42268") ?? UIColor.red
+        let bottomColor = UIColor(hex: "#601748") ?? UIColor.red
         
         self.gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
-        self.gradientLayer.locations = [0.0, 1.0]
+        self.gradientLayer.locations = [0.85, 1.0]
         self.gradientLayer.frame = view.bounds
         self.view.layer.insertSublayer(gradientLayer, at: 0)
     }

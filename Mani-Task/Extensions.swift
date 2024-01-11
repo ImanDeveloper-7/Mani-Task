@@ -140,3 +140,24 @@ extension UIView {
         gradient.zPosition = 0
     }
 }
+
+extension UIView {
+    func applyGradientWithScaledTopColor(topHexColor: String, bottomHexColor: String) {
+        // Convert hex strings to UIColor
+        let topColor = UIColor(hex: topHexColor) ?? .clear
+        let bottomColor = UIColor(hex: bottomHexColor) ?? .clear
+
+        // Create gradient layer
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.colors = [topColor.cgColor, bottomColor.cgColor]
+        gradientLayer.locations = [0.0, 1.0]
+        gradientLayer.frame = self.bounds
+
+        // Adjust the scale of the top color
+        let transform = CATransform3DMakeScale(2.0, 1.0, 1.0)
+        gradientLayer.transform = transform
+
+        // Apply the gradient to the view
+        self.layer.insertSublayer(gradientLayer, at: 0)
+    }
+}
