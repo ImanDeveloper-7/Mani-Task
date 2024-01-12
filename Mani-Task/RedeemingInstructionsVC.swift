@@ -72,8 +72,8 @@ extension RedeemingInstructionsVC {
         self.view_copy.applyGradient(isVertical: false, cornerRadius: 15, colorHexArray: ["#261239", "#601748"])
         self.view_copy.gradientBorder(colors: [topColor, bottomColor], isVertical: false, lineWidth: 2)
         
-        self.btn_visitWebsite.layer.cornerRadius = 20
-        self.btn_redeemed.layer.cornerRadius = 20
+        self.btn_visitWebsite.layer.cornerRadius = 18
+        self.btn_redeemed.layer.cornerRadius = 18
         
         self.lbl_number1.makeCircularWithBackgroundColor(hexColor: "#E42268")
         self.lbl_number2.makeCircularWithBackgroundColor(hexColor: "#E42268")

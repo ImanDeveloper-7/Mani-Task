@@ -221,7 +221,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="46:59:30" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="New-R7-ZA2">
-                                                        <rect key="frame" x="136" y="46" width="109" height="32"/>
+                                                        <rect key="frame" x="136" y="46" width="117.33333333333331" height="32"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="32" id="YnZ-zw-NJ5"/>
                                                         </constraints>
@@ -275,16 +275,16 @@
                                                         <rect key="frame" x="18" y="107" width="317" height="52"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOGETHERKOMBUCHA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4PW-iN-X0d">
-                                                                <rect key="frame" x="19" y="18" width="181.33333333333334" height="19.333333333333329"/>
+                                                                <rect key="frame" x="19" y="18" width="191.66666666666666" height="19.333333333333329"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="19.329999999999998" id="pIl-4F-g6B"/>
                                                                 </constraints>
-                                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                                                <fontDescription key="fontDescription" name="Domine-Bold" family="Domine" pointSize="16"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oxy-Jp-kMk">
-                                                                <rect key="frame" x="213.33333333333334" y="14" width="85.666666666666657" height="25"/>
+                                                                <rect key="frame" x="223.66666666666671" y="14" width="75.333333333333343" height="25"/>
                                                                 <color key="backgroundColor" red="0.1803921568627451" green="0.074509803921568626" blue="0.23529411764705882" alpha="0.89803921568627454" colorSpace="calibratedRGB"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="25" id="j5I-ZX-LFy"/>
